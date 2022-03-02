@@ -1,0 +1,18 @@
+--- ./system/Dispatcher/Dispatcher.php	2022-02-27 23:54:07.081604146 +0000
++++ ./system/Dispatcher/OriginalDispatcher-php	2022-03-02 06:13:03.556657389 +0000
+@@ -72,13 +72,9 @@
+ 					{
+ 						$_redirect	= TRUE;
+ 					}
+-					//jdw else if ( !isset( $INFO['installed'] ) OR !$INFO['installed'] )
+-					else if ( false ) 
++					else if ( !isset( $INFO['installed'] ) OR !$INFO['installed'] )
+ 					{
+-						// This looks weird, but there was a period of time where 
+-						// "installed" was misspelled as "instaled" on Community 
+-						// in the Cloud after install finished.
+-						//   So, if that is present, assume we're okay. */
++						/* This looks weird, but there was a period of time where "installed" was misspelled as "instaled" on Community in the Cloud after install finished. So, if that is present, assume we're okay. */
+ 						if ( !isset( $INFO['instaled'] ) )
+ 						{
+ 							if( isset( $_SERVER['SERVER_PROTOCOL'] ) and \strstr( $_SERVER['SERVER_PROTOCOL'], '/1.0' ) !== false )
