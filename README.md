@@ -3,7 +3,7 @@ The repository devoted to plan, organize and execute work items pursuant to the 
 
 # Wiki
 
-The (Wiki)[https://github.com/CustodesTechnologia/System/wiki]  associated with this project and the follow-up work is documented.
+The [Wiki](https://github.com/CustodesTechnologia/System/wiki)  associated with this project and the follow-up work is documented.
 
 ## Current Project
 
